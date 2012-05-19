@@ -23,6 +23,9 @@ $dealres = mysql_query($dealquery);
 <body>
 <div id="page"> 
     <div id="header">
+<?php
+include "login.php";
+?>
     	<div class="title">Waterford Deals</div>
         <div class="subText">For Her</div>
     </div>
