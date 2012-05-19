@@ -76,13 +76,12 @@ include "db.php";
 	</div>
 	
 	<div class="articleBox">
-		<?php
+		
+		<div class="articleTitle"><center>Deals</center></div><!---------------PAGE TITLE--------------->
+        <?php
 		if($_SESSION['acc_type']==1)
 		{
 		?>
-		<div class="articleTitle">What is Waterford Deals?</div><!---------------PAGE TITLE--------------->
-        
-        
 		<div class="articleContent"><!---------------PAGE CONTENT--------------->
       
         <p>We offer Coupon Codes for your Christmas shopping with 20% discount at local shops.</p><br />
@@ -96,7 +95,7 @@ include "db.php";
 		include "dealtable.php";
 		?>
 	</div>
- <strong>Offer is valid until 25th December 2011</strong>
+ <strong><br/>Summer Offer is NOW ON!!!</strong>
 
     </div>
 

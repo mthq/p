@@ -15,5 +15,5 @@ $result = mysql_query($sql);
     </td>';
      $i++;
    }
-  echo '</table>';
+  echo '</table><br/>';
 		?>
