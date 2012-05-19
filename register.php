@@ -4,7 +4,7 @@ mysql_select_db("project") or die("Could not select database");
 
 
 if( isset($_GET['register2'] )){
-	$regquery = "insert into users values(NULL, '$_GET[firstname]', '$_GET[surname]', 1, '$_GET[username]', '$_GET[password]', 'jkashdjksah@jsdh.ie' ) "; 
+	$regquery = "insert into users values(NULL, '$_GET[firstname]', '$_GET[surname]', 1, '$_GET[username]', '$_GET[email]', '$_GET[password]') "; 
 mysql_query($regquery) or die("Query Error ".mysql_error());
 header("Location: register2.php");
 }
@@ -46,20 +46,13 @@ require "menu.php";
       <div class="articleContent">
         <table width="247" height="180">
           
-  <form name='myform' action = 'register.php' method = 'get'>
-
-<tr><td>Firstname</td><td><input type = 'text' name = 'firstname' /></td></tr>
-<tr><td>Lastname</td><td>
-<input type = 'text' name = 'surname'>
-</td></tr>
-<tr><td>Username</td><td>
-<input type = 'text' name = 'username'>
-</td></tr>
-<tr><td>Password</td><td>
-<input type = 'text' name = 'password'>
-</td></tr>
-<tr>
-<td><input type='reset' name='reset' value='Clear form' /></td>
+<form name='myform' action = 'register.php' method = 'get'>
+<tr><td>Firstname</td><td> <input type = 'text' name = 'firstname'/></td></tr>
+<tr><td>Lastname</td><td>  <input type = 'text' name = 'surname'></td></tr>
+<tr><td>Username</td><td>  <input type = 'text' name = 'username'></td></tr>
+<tr><td>E-mail</td><td>    <input type = 'text' name = 'email'></td></tr>
+<tr><td>Password</td><td>  <input type = 'text' name = 'password'></td></tr><tr>
+<td><input type='reset' name='reset' value='Clear form'/></td>
 <td><input type='submit' name ='register2' value='Register' align="middle" /></td></tr>
 </form>
 
@@ -67,7 +60,7 @@ require "menu.php";
         <p>We have the most up to date deals and best prices from around your house. Just have a look then head of to the shop and get your item with 20% discount with our coupon code.</p><br/>
        
 	</div>
- <strong>Offer is valid until 25th December 2011</strong>
+ <strong>Summer offer is now ON!!!</strong>
 
     </div>
 

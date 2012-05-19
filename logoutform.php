@@ -8,5 +8,5 @@ if (isset($_POST['logout'])){
 session_start();
 session_destroy();
 //$_SESSION['loggedin'] = FALSE;
-header('Location:http://localhost/p/index.php');
+header;
 }

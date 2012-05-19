@@ -45,7 +45,7 @@ require "menu.php";
         <p>We have the most up to date deals and best prices from around your house. Just have a look then head of to the shop and get your item with 20% discount with our coupon code.</p><br/>
        
 	</div>
- <strong>Offer is valid until 25th December 2011</strong>
+ <strong>Summer offer is now ON!!!</strong>
 
     </div>
 
