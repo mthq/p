@@ -3,5 +3,6 @@
 <input type = 'text' name = 'username'>
 <input type = 'password' name = 'password'><br>
 <input type = 'submit' value='Log In' name='login'>
-<input type = 'submit' value='Sign Up' name='register' onclick='return redirect()'>
+<input type = 'button' value='Sign Up' name='register' onclick="location.href='register.php'">
 </form>
+
