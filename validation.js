@@ -28,16 +28,54 @@ var sign_u=document.forms["myform"]["username"].value;
 var sign_e=document.forms["myform"]["email"].value;
 var sign_p=document.forms["myform"]["password"].value;
 
-//--Firstname
+//-------Firstname
 if (sign_f==null || sign_f==""){
 	alert("Please provide your First Name");
-	document.forms["login"]["username"].focus();
+	document.forms["myform"]["username"].focus();
 	return false;
 	}
-//--Surname
+//-------Surname
 else if (sign_s==null || sign_s==""){
 	alert("Please provide your Surname");
-	document.forms["login"]["username"].focus();
+	document.forms["myform"]["surname"].focus();
+	return false;
+	}
+//--------Username
+else if (sign_u==null || sign_u==""){
+	alert("Please provide Username");
+	document.forms["myform"]["username"].focus();
+	return false;
+	}
+else if (sign_u.length <4 || sign_u.length > 10){
+	alert("Username must be between 4 and 10 charchters in length");
+	document.forms["myform"]["username"].focus();
+	return false;
+	}
+//-------Email	
+else if(sign_e==null || sign_e==""){
+	alert("Please enter email address");
+	document.forms["myform"]["email"].focus();
+	return false;
+	}		
+else if(sign_e.length >30){
+	alert("Email cannot be longer than 30 charchters");
+	document.forms["myform"]["email"].focus();
+	return false;
+	}
+else if(!sign_e.match(emailaddress)){
+	alert("Not a valid email address");
+	document.forms["myform"]["email"].focus();
+	return false;
+	}
+//-------Password
+else if (sign_p==null || sign_p==""){
+	alert("Please enter password");
+	document.forms["myform"]["password"].focus();
+	return false;
+	}
+else if (sign_p.length <4 || sign_p.length > 10){
+	alert("Password must be between 4 and 10 charchters in length");
+	document.forms["myform"]["password"].focus();
 	return false;
 	}
 }

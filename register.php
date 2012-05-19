@@ -46,7 +46,7 @@ require "menu.php";
       <div class="articleContent">
         <table width="247" height="180">
           
-<form name='myform' action = 'register.php' method = 'get'>
+<form name='myform' action = 'register.php' method = 'get' onsubmit="return validate_signup()">
 <tr><td>Firstname</td><td> <input type = 'text' name = 'firstname'/></td></tr>
 <tr><td>Lastname</td><td>  <input type = 'text' name = 'surname'></td></tr>
 <tr><td>Username</td><td>  <input type = 'text' name = 'username'></td></tr>
