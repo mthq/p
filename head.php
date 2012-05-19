@@ -7,5 +7,6 @@
 	<meta name="author" content="Tomasz Sutor" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script language="javascript" src="validation.js"></script>
 <style type="text/css">
 </style></head>

@@ -1,4 +1,4 @@
-<form name='login' action = 'index.php' method = 'post' name='loginform'>
+<form name='login' action = 'index.php' method = 'post' name='loginform' onsubmit="return validate_login()">
 <input type	= 'hidden' name = 'option' value = 'login'>
 <input type = 'text' name = 'username'>
 <input type = 'password' name = 'password'><br>

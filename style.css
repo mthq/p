@@ -23,8 +23,8 @@ body {
 #sign {
 	position:absolute;
 	width:680px;
-	height: 35px;
-	top: 10px;
+	height: 46px;
+	top: 2px;
 }
 
 #page
@@ -42,7 +42,7 @@ body {
 .title
 {
 	position:relative;
-	top:44px;
+	top:47px;
 	text-align:left;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:32px;
@@ -54,7 +54,7 @@ body {
 .subText
 {
 	position: relative;
-	top:48px;
+	top:51px;
 	text-align:left;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:12px;

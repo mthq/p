@@ -2,9 +2,9 @@
 <input type = 'submit' name='logout' value='Log Out'>
 </form>
 <?php 
-echo "first";
+//echo "first";
 if (isset($_POST['logout'])){
-echo "second";
+//echo "second";
 session_start();
 session_destroy();
 //$_SESSION['loggedin'] = FALSE;

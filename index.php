@@ -13,7 +13,7 @@ include "db.php";
 		if($loginrecord['username'] != Null){
 				
 				if($loginrecord['password'] == $_POST['password']){
-					print "Welcome this is first run Back! $loginrecord[username]";
+					// print "Welcome this is first run Back! $loginrecord[username]";
 					$_SESSION['loggedin'] = "yes";
 					$_SESSION['user_name'] = $loginrecord['username'];
 					$_SESSION['acc_type'] = $loginrecord['acc_type'];
@@ -32,6 +32,7 @@ include "db.php";
 	<meta name="author" content="Tomasz Sutor" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script language="javascript" src="validation.js"></script>
 <style type="text/css">
 </style></head>
 <body>
@@ -51,7 +52,7 @@ include "db.php";
 	}
     ?>
     </div><!---------------TITLE--------------->
-    <div class="title">Waterford Deals</div>
+<div class="title">Waterford Deals</div>
         <div class="subText">Discounted goods at you local marketplace</div>
    	 </div>
  			<div id="bar"><!--MENU-->
