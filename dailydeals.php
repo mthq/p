@@ -4,7 +4,6 @@ session_start();
 
 include "db.php";//--Database connection
 
-
 include "head.php";//---Head
 ?>
 <body>

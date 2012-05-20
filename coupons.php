@@ -1,6 +1,8 @@
 <?php
+session_start();
 
 include("/Applications/XAMPP/xamppfiles/htdocs/Project/db.php");
+include "sessioncheck.php";
 
 $dealquery = "select * from deals";
 $dealres = mysql_query($dealquery);

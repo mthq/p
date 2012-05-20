@@ -6,7 +6,7 @@ include "db.php";
 
 	if( isset($_POST[login]) ){
 
-		$loginquery = "select firstname, surname username, password, acc_type from users where username = '".$_POST['username']."'";
+		$loginquery = "select user_id, firstname, surname, username, password, acc_type, email from users where username = '".$_POST['username']."'";
 		$loginresult = mysql_query($loginquery) or die("Query Error ".mysql_error());
 		$loginrecord = mysql_fetch_array($loginresult, MYSQL_ASSOC);				
 		
@@ -17,8 +17,10 @@ include "db.php";
 					$_SESSION['loggedin']  = "yes";
 					$_SESSION['user_name'] = $loginrecord['username'];
 					$_SESSION['acc_type']  = $loginrecord['acc_type'];
-					$_SESSION['furstname'] = $loginrecord['firstname'];
+					$_SESSION['firstname'] = $loginrecord['firstname'];
 					$_SESSION['surname']   = $loginrecord['surname'];
+					$_SESSION['email']     = $loginrecord['email'];
+					$_SESSION['userid']    = $loginrecord['user_id'];
 				}else print "Wrong Username or Password";
 				
 			}else print "Wrong username";
