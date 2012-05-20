@@ -1,5 +1,5 @@
 <form name='logout' action = '' method = 'post'>
-<input type = 'button' value='Account' name='account' onclick="location.href='account.php'">
+<input type = 'button' value='Account' name='account' onclick="location.href='userpage.php'">
 <input type = 'submit' name='logout' value='Log Out'>
 </form>
 <?php 

@@ -81,16 +81,16 @@ include "db.php";
 		
 		<div class="articleTitle"><center>Deals</center></div><!---------------PAGE TITLE--------------->
         <?php
-		if($_SESSION['acc_type']==1)
-		{
+		if($_SESSION['acc_type']==1){
 		?>
-		<div class="articleContent"><!---------------PAGE CONTENT--------------->
-      
+		<div class="articleContent">
+		      
         <p>We offer Coupon Codes for your Christmas shopping with 20% discount at local shops.</p><br />
         <p>This site list all local merchants and sellers from Waterford participating in this program. 
         If you wish to join us please visit <a href="contact.php#Contact"><strong>Contact</strong></a> tab.</p><br />
         <p>We are here to help you with your Christmas Shopping and we advertise only Waterford shops. If you looking for a gift idea for you Children, Brother or Sister you are in right place. All items can be picked up locally.  </p><br />
         <p>We have the most up to date deals and best prices from around your house. Just have a look then head of to the shop and get your item with 20% discount with our coupon code.</p><br/>
+		
 		</div>
 		<?php
 		}

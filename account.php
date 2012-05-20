@@ -26,23 +26,23 @@ $result = mysql_query($query) or die("Query Error ".mysql_error());
 $record = mysql_fetch_array($result, MYSQL_ASSOC);
 ?>
 
-<table>
-<tr><td>Firstname<td><td><?php echo $record['firstname'];?></td>
+<table width="460" height="155"border="1" BORDERCOLOR="#6A0020" cellpadding="5" cellspacing="0">
+<tr><td width="75">Firstname:</td><td width="125"><?php echo $record['firstname'];?></td>
 <form name='updatename' action = '' method = 'post'>
-<td><input type = 'text' name = 'firstname'></td></td>
-<td><input type = 'submit' value='Update' name='updatename'></td>
+<td width="135"><input name = 'firstname' type = 'text' maxlength="12"></td>
+<td width="27"><input type = 'submit' value='Update' name='updatename'></td>
 </form></tr>
 
 
-<tr><td>Surname<td><td><?php echo $record['surname'];?></td>
+<tr><td>Surname:</td><td><?php echo $record['surname'];?></td>
 <form name='updatesurname' action = '' method = 'post'>
-<td><input type = 'text' name = 'surname'></td></td>
+<td><input name = 'surname' type = 'text' maxlength="12"></td>
 <td><input type = 'submit' value='Update' name='updatesurname'></td>
 </form></tr>
 
-<tr><td>Email<td><td><?php echo $record['email'];?></td>
+<tr><td>Email:</td><td><?php echo $record['email'];?></td>
 <form name='updateemail' action = '' method = 'post'>
-<td><input type = 'text' name = 'email'></td></td>
+<td><input name = 'email' type = 'text' maxlength="40"></td>
 <td><input type = 'submit' value='Update' name='updateemail'></td>
 </form></tr>
 
