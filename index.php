@@ -14,11 +14,11 @@ include "db.php";
 				
 				if($loginrecord['password'] == $_POST['password']){
 					// print "Welcome this is first run Back! $loginrecord[username]";
-					$_SESSION['loggedin'] = "yes";
+					$_SESSION['loggedin']  = "yes";
 					$_SESSION['user_name'] = $loginrecord['username'];
-					$_SESSION['acc_type'] = $loginrecord['acc_type'];
+					$_SESSION['acc_type']  = $loginrecord['acc_type'];
 					$_SESSION['furstname'] = $loginrecord['firstname'];
-					$_SESSION['surname'] = $loginrecord['surname'];
+					$_SESSION['surname']   = $loginrecord['surname'];
 				}else print "Wrong Username or Password";
 				
 			}else print "Wrong username";
@@ -68,7 +68,7 @@ include "db.php";
     <div id="pageContent"><!---------------PAGE--------------->
     
 	<div class="articleMenu">
-	<ul id="menuTitle">
+	<ul id="menuList">
 		<?php
 		include('leftmenu.php');
 		?>
