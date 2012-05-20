@@ -87,9 +87,8 @@ require "menu.php";
 </tr>
 </table>
 </form>
-
 	</div>
-	<br><p>
+	<p>
       <a href="http://validator.w3.org/check?uri=referer"><img
       src="http://www.w3.org/Icons/valid-xhtml10" align="right" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
   </p>
@@ -100,10 +99,7 @@ require "menu.php";
             alt="Valid CSS!" />
     </a>
 </p>
-  </br>
-    </div>
-
-</div>
+  </br></div></div>
     <div id="footer"><a href="http://www.mthq.net">website design</a> by <a href="http://www.tomasz.sutor@gmail.com">Tomasz Sutor</a> | <a href="http://www.wit.ie">designed for WIT</a></div>
         
 </body>

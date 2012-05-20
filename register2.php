@@ -6,7 +6,7 @@ mysql_select_db("project") or die("Could not select database");
 if( isset($_GET['register'] )){
 $regquery = "insert into users values(NULL, '$_GET[firstname]', '$_GET[surname]', 1, '$_GET[username]', '$_GET[password]' ) "; 
 mysql_query($regquery) or die("Query Error ".mysql_error());
-header("Location: http://localhost/Project/register2.php");
+//header("Location: register2.php");
 }
 
 ?>
@@ -26,9 +26,6 @@ header("Location: http://localhost/Project/register2.php");
 <div id="page"> 
     <div id="header">
     <div id="sign" align="right">
-	<?php
-    include('loginform.php');
-    ?>
     </div>
    	  <div class="title" align="center">Waterford Deals</div>
         <div class="subText">Discounted goods at you local marketplace</div>
@@ -40,7 +37,13 @@ require "menu.php";
     <div id="pageContent">
     
     <div class="articleTitle"><center><br/><br/>Thank You for registration!!!</center><br/></div>
-        
+    
+        <form name='login' action = 'index.php' method = 'post' name='log inform' onsubmit="return validate_login()">
+		<input type	= 'hidden' name = 'option' value = 'login'>
+		<input type = 'text' name = 'username'>
+		<input type = 'password' name = 'password'>
+		<input type = 'submit' value='Log In' name='login'>
+		</form>
        
         <p><center>We have the most up to date deals and best prices from around your house. Just have a look then head of to the shop and get your item with 20% discount with our coupon code.</center></p><br/>
        

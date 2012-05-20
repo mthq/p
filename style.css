@@ -29,13 +29,13 @@ body {
 
 #page
 {
-  margin: 0 auto 0 auto; 
-  display: table; 
-  height: 100%;  
-  position: relative; 
-  overflow: hidden; 
-  background: #8d8d8d url(theme/background.png) repeat-y;
-  width: 730px;
+	margin: 0 auto 0 auto;
+	display: table;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	background: #8d8d8d url(theme/background.png) repeat-y;
+	width: 730px;
 }
 
 
@@ -83,6 +83,8 @@ font-weight:bold;
 	text-align:left;
 	font-family:Arial, Helvetica, sans-serif;
 	line-height:27px;
+	text-indent: 29px;
+	height: 420px;
 }
 .articleMenu {
 	width:170px;

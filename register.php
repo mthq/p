@@ -51,7 +51,7 @@ require "menu.php";
 <tr><td>Lastname</td><td>  <input type = 'text' name = 'surname'></td></tr>
 <tr><td>Username</td><td>  <input type = 'text' name = 'username'></td></tr>
 <tr><td>E-mail</td><td>    <input type = 'text' name = 'email'></td></tr>
-<tr><td>Password</td><td>  <input type = 'text' name = 'password'></td></tr><tr>
+<tr><td>Password</td><td>  <input type = 'password' name = 'password'></td></tr><tr>
 <td><input type='reset' name='reset' value='Clear form' align="middle"/></td>
 <td><input type='submit' name ='register2' value='Register' align="middle" /></td></tr>
 </form>
