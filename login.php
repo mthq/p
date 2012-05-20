@@ -1,7 +1,7 @@
    <div id="sign" align="right">
      <?php
 	if($_SESSION['loggedin']=='yes'){
-		echo 'Welcome back! '.$_SESSION['firstname'].$_SESSION['surname'];
+		echo '<font color="6a0020>">Welcome back! '.$_SESSION['firstname'].' '.$_SESSION['surname'].'</font>';
 		include('logoutform.php');
 	}
 	else{

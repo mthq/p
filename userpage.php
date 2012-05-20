@@ -28,6 +28,7 @@ require "menu.php";
 ?>
 	<div id="infBar">Welcome to the site</div>
 		<div id="pageContent">
+
         		<div class="articleTitle"><center>Update your details below</center></div>
                 	<div class="articleContent"><center>
       

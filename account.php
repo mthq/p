@@ -26,7 +26,7 @@ $result = mysql_query($query) or die("Query Error ".mysql_error());
 $record = mysql_fetch_array($result, MYSQL_ASSOC);
 ?>
 
-<table width="460" height="155"border="1" BORDERCOLOR="#6A0020" cellpadding="5" cellspacing="0">
+<table width="460" height="155"border="1" BORDERCOLOR="#6A0020" cellpadding="5" cellspacing="0" align="center">
 <tr><td width="75">Firstname:</td><td width="125"><?php echo $record['firstname'];?></td>
 <form name='updatename' action = '' method = 'post'>
 <td width="135"><input name = 'firstname' type = 'text' maxlength="12"></td>

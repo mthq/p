@@ -40,11 +40,11 @@ require "menu.php";
     <div id="infBar">welcome to the site</div>
     <div id="pageContent">
     
-    <div class="articleTitle">New User:</div>
+    <div class="articleTitle"><center>New User:</center></div>
         
         
       <div class="articleContent">
-        <table width="247" height="180">
+        <table width="247" height="180" align="center">
           
 <form name='myform' action = 'register.php' method = 'get' onsubmit="return validate_signup()">
 <tr><td>Firstname</td><td> <input type = 'text' name = 'firstname'/></td></tr>
@@ -52,7 +52,7 @@ require "menu.php";
 <tr><td>Username</td><td>  <input type = 'text' name = 'username'></td></tr>
 <tr><td>E-mail</td><td>    <input type = 'text' name = 'email'></td></tr>
 <tr><td>Password</td><td>  <input type = 'text' name = 'password'></td></tr><tr>
-<td><input type='reset' name='reset' value='Clear form'/></td>
+<td><input type='reset' name='reset' value='Clear form' align="middle"/></td>
 <td><input type='submit' name ='register2' value='Register' align="middle" /></td></tr>
 </form>
 

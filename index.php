@@ -45,7 +45,7 @@ include "db.php";
     <div id="sign" align="right">
      <?php
 	if($_SESSION['loggedin']=='yes'){
-		echo 'Welcome back! '.$_SESSION['user_name'];
+		echo '<font color="6a0020>">Welcome back! '.$_SESSION['firstname'].' '.$_SESSION['surname'].'</font>';
 		include('logoutform.php');
 	}
 	else{
@@ -94,7 +94,9 @@ include "db.php";
 		</div>
 		<?php
 		}
+		
 		include "dealtable.php";
+		
 		?>
 	</div>
  <strong><br/>Summer Offer is NOW ON!!!</strong>
