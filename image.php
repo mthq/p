@@ -4,15 +4,15 @@
 </head>
  <body>
 	
-	<form action="image.php" method="POST" ectype="multipart/form-data">
+	<form action="image.php" method="POST" enctype="multipart/form-data">
 		File:
-		<input type="file" name="image"><input type="submit" value="Upload">
+		<input type="file" name="image"> <input type="submit" value="Upload">
 	</form>
 	
 <?php
 //connect to database 
-mysql_connect("localhost","root","") or die (mysql_error());
-mysql_select_db("project") or die (mysql_error());
+mysql_connect("localhost","root","") or die ("Query Error ".mysql_error());
+mysql_select_db("project") or die ("Query Error ".mysql_error());
 
 //file properties 
 $file = $_FILES['image']['tmp_name'];
@@ -23,7 +23,7 @@ $file = $_FILES['image']['tmp_name'];
 	else
 	{
 
-		$image = addslashes (file_get_content($_FILES['image']['tmp_name']));
+		$image = addslashes (file_get_contents($_FILES['image']['tmp_name']));
 		$image_name = addslashes ($_FILES['image']['name']);
 		$image_size = getimagesize($_FILES['image']['tmp_name']);
 		
@@ -31,10 +31,10 @@ $file = $_FILES['image']['tmp_name'];
 			echo "That's not an image";
 		else
 		{
-		if	(!$isset = mysql_query("INSERT INTO store VALUES ('','$image_name','$image')"));
+		if	(!$isset = mysql_query("INSERT INTO store VALUES ('','$image_name','$image')"))
 			echo "Problem uploading image.";
 			{
-				$lastid = mysql_inser_id();
+				$lastid = mysql_insert_id();
 				echo "Image uploded.<p />Your image:<p /><img src=get.php?id=$lastid>";
 			}
 		}
@@ -42,7 +42,6 @@ $file = $_FILES['image']['tmp_name'];
 	
 
 ?>	
-	
-http://www.youtube.com/watch?feature=fvwp&NR=1&v=vFZfJZ_WNC4	
+		
 	</body>
 </html>
