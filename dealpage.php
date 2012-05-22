@@ -1,5 +1,4 @@
 <?php
-
 if(!isset($_REQUEST['page']))
 {
    $_REQUEST['page'] = 0;
@@ -22,17 +21,17 @@ $query = 'SELECT * FROM deals'. " LIMIT $start, $perPage";
 $result = mysql_query($query);
 echo '<form action="index.php" method="GET">';
 echo '<br /><table border="1" BORDERCOLOR="#6A0020" cellpadding="5" cellspacing="0" width="500">
-		<tr><td align="left" valign="top" width="100" height="10">deal</td>
-		<td align="left" valign="top" width="100" height="10">deal</td>
-		<td align="left" valign="top" width="100" height="10">deal</td>
-		
+
 		</tr><tr>';
-	    $i = 0;
+		
+$i = 0;
 while ($record = mysql_fetch_array($result)) {
 
-	if ($i == 3){echo '</tr><tr>';
-	$i=0;}
-	echo '<td align="left" valign="top" width="100" height="100"><img src=/image/'.$row['deal_id'].'.png><a href=index.php?id='.$row['deal_id'].'>'.$row['deal_id'].'</a><br />
+	if ($i == 3){
+	echo'</tr><tr>';
+	$i=0;
+	}
+	echo '<td align="left" valign="top" width="100" height="100"><img src=/p/image/'.$row['deal_id'].'.png><a href=index.php?id='.$row['deal_id'].'>'.$row['deal_id'].'</a><br />
 	<a href=index.php?id='.$record['deal_id'].'>deal: '.$record['deal_name'].'</a><br />
 	<a href=index.php?id='.$record['deal_id'].'>price: '.$record['deal_price'].'</a><br />
 	<a href=index.php?id='.$record['deal_id'].'>merchant: '.$record['merchant_id'].'</a><br />
