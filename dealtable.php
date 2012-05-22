@@ -9,7 +9,7 @@ $result = mysql_query($sql);
   			 echo '</tr><tr>';
        		$i=0;
        		}
-    echo '<td align="left" valign="top" width="100" height="100"><a href=index.php?id='.$row['deal_id'].'>'.$row['deal_id'].'</a><br />
+    echo '<td align="left" valign="top" width="100" height="100"><img src=/image/'.$row['deal_id'].'.png><a href=index.php?id='.$row['deal_id'].'>'.$row['deal_id'].'</a><br />
     <a href=index.php?id='.$row['deal_id'].'>'.$row['deal_name'].'</a><br />
     <a href=index.php?id='.$row['deal_id'].'>'.$row['deal_price'].'</a>
     </td>';

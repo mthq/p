@@ -46,9 +46,9 @@ require "menu.php";
           
 <?php
 
-while($dealrecord = mysql_fetch_array($dealres, MYSQL_ASSOC)){
-print "$dealrecord[deal_id] <p/>";
-}
+//while($dealrecord = mysql_fetch_array($dealres, MYSQL_ASSOC)){
+//print "$dealrecord[deal_id] <p/>";
+//}
 
 ?>
           
