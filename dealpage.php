@@ -17,7 +17,13 @@ $page = 1;
 }
 
 $start = ($page - 1) * $perPage;
+
+if (isset($cat_id) && (trim($cat_id) != "")){
+$query = 'SELECT * FROM deals'. " WHERE cat_id = '$cat_id' LIMIT $start, $perPage" ;	
+}
+else{
 $query = 'SELECT * FROM deals'. " LIMIT $start, $perPage"; 
+}
 $result = mysql_query($query);
 echo '<form action="index.php" method="GET">';
 echo '<br /><table border="1" BORDERCOLOR="#6A0020" cellpadding="5" cellspacing="0" width="500">
