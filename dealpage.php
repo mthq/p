@@ -19,7 +19,7 @@ $page = 1;
 $start = ($page - 1) * $perPage;
 $query = 'SELECT * FROM deals'. " LIMIT $start, $perPage"; 
 $result = mysql_query($query);
-echo '<form action="index.php" method="GET">';
+echo '<form action="dealpage.php" method="GET">';
 echo '<br /><table border="1" BORDERCOLOR="#6A0020" cellpadding="5" cellspacing="0" width="500">
 
 		</tr><tr>';
@@ -31,11 +31,11 @@ while ($record = mysql_fetch_array($result)) {
 	echo'</tr><tr>';
 	$i=0;
 	}
-	echo '<td align="left" valign="top" width="100" height="100"><img src=/p/image/'.$row['deal_id'].'.png><a href=index.php?id='.$row['deal_id'].'>'.$row['deal_id'].'</a><br />
-	<a href=index.php?id='.$record['deal_id'].'>deal: '.$record['deal_name'].'</a><br />
-	<a href=index.php?id='.$record['deal_id'].'>price: '.$record['deal_price'].'</a><br />
-	<a href=index.php?id='.$record['deal_id'].'>merchant: '.$record['merchant_id'].'</a><br />
-	<a href=index.php?id='.$record['deal_id'].'>cat id: '.$record['cat_id'].'</a><br />
+	echo '<td align="left" valign="top" width="100" height="100"><img src=/p/image/'.$row['deal_id'].'.png><a href=dealpage.php?id='.$row['deal_id'].'>'.$row['deal_id'].'</a><br />
+	<a href=dealpage.php?id='.$record['deal_id'].'>deal: '.$record['deal_name'].'</a><br />
+	<a href=dealpage.php?id='.$record['deal_id'].'>price: '.$record['deal_price'].'</a><br />
+	<a href=dealpage.php?id='.$record['deal_id'].'>merchant: '.$record['merchant_id'].'</a><br />
+	<a href=dealpage.php?id='.$record['deal_id'].'>cat id: '.$record['cat_id'].'</a><br />
 	</td>';
 	$i++;
 }

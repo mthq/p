@@ -52,7 +52,7 @@ require "menu.php";
 
 ?>
           
-<table border="1" bordercolor="#6A0020" style="background-color:#DEBB73" width="600" cellpadding="5" cellspacing="3">
+<table border="1" bordercolor="#6A0020" style="background-color:#DEBB73" width="600" cellpadding="5" cellspacing="3" align="center">
 	<tr>
 		<td>
 			<dl>
