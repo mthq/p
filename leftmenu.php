@@ -12,10 +12,10 @@ if($_SESSION['acc_type']=='2'){
 else{
 	$query	= "SELECT * FROM category";
 	$queryresult	= mysql_query($query);
-	echo '<form action="dealpage.php" method="GET">';
+	echo '<form action="index.php" method="GET">';
 	while($record=mysql_fetch_array($queryresult))
 	{
-		echo '<li><a href=dealpage.php?cat_id='.$record['cat_id'].'>'.$record['cat_name'].'</a></li>';
+		echo '<li><a href=index.php?cat_id='.$record['cat_id'].'>'.$record['cat_name'].'</a></li>';
 		
 	}echo '</form>';
 	

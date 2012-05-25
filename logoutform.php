@@ -7,4 +7,5 @@ if (isset($_POST['logout'])){
 session_start();
 session_destroy();
 $_SESSION['loggedin']  = null;
+header("Location: register.php");
 }

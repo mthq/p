@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once "db.php";
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -29,16 +30,22 @@ require "menu.php";
 	<div id="infBar">Welcome to the site</div>
 		<div id="pageContent">
 
-        		<div class="articleTitle"><center>Update your details below</center></div>
+        		<div class="articleTitle"><center>Update details below</center></div>
                 	<div class="articleContent"><center>
       
 <?php
+if($_SESSION['acc_type']=='2'){
+include "admin.php";
+}
+else{
 include "account.php";
+    echo "<form name='logout' action = '' method = 'post'>";
+ echo '<input type = "button" value="Done" name="account" onclick=location.href="index.php">';
+ echo '<input type="reset" value="Clear form" name="reset">';
+ echo '</form>';
+ 
+}
 ?>
-        <form name='logout' action = '' method = 'post'>
-			<input type = 'button' value='Done' name='account' onclick="location.href='index.php'">
-			<input type="reset" value="Clear form" name="reset">
-		</form>
 	</center></div>
     </div>
 

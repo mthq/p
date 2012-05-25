@@ -31,7 +31,7 @@ $file = $_FILES['image']['tmp_name'];
 			echo "That's not an image";
 		else
 		{
-		if	(!$isset = mysql_query("INSERT INTO store VALUES ('','$image_name','$image')"))
+		if	(!$isset = mysql_query("INSERT INTO image VALUES ('','$image_name','$image')"))
 			echo "Problem uploading image.";
 			{
 				$lastid = mysql_insert_id();

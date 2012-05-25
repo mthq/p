@@ -37,12 +37,12 @@ require "menu.php";
 	<div id="infBar">Welcome to the site</div>
     <div id="pageContent">
     
-    <div class="articleTitle">Spoil your self or your beloved one!</div>
+    <div class="articleTitle">Get the code from below to pay less!</div>
         
         
       <div class="articleContent">
       
-          <p>Use our Christmas coupons code in one of the shops below:</p><br>
+          <p>This Month out artiness are:</p><br>
           
 <?php
 
@@ -54,13 +54,13 @@ require "menu.php";
           
 <table border="1" bordercolor="#6A0020" style="background-color:#DEBB73" width="600" cellpadding="5" cellspacing="3" align="center">
 	<tr>
-		<td>
+		<td align="center">
 			<dl>
 <dt><a href="http://www.goldenpages.ie/mulligans-pharmacy-waterford/14/"><font color=#6A0020>Mulligans Pharmacy</font></a></dt>
-				<dd>coupon <b>AC4T2B</b></dd>
+				<dd>coupon<b>AC4T2B</b></dd>
 			</dl>
 		</td>
-		<td>
+		<td align="center">
 			<dl>
 <dt><a href="http://www.goldenpages.ie/boots-retail-irl-ltd-waterford/1/"><font color=#6A0020>Boots</font></a></dt>
 				<dd>coupon <b>9ELQ7k</b></dd>
@@ -81,7 +81,7 @@ require "menu.php";
 </table>
 
 
-        <br><p>All shops are offering gift vouchers and exclusive Christmas packages. Go on try it! Remember with one of the codes you have 20% discount and the offer is valid until 25th December 2011</p>
+        <br><p>All shops are offering gift vouchers. Go on try it! Remember with one of the codes you have 20% discount</p>
 	</div>
 
 

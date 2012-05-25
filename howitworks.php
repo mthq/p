@@ -29,23 +29,20 @@ require "menu.php";
 	<div id="infBar">Welcome to the site</div>
     <div id="pageContent">
     
-    <div class="articleTitle">Big Boys Toys</div>
+    <div class="articleTitle">Our site offers:</div>
         
         
       <div class="articleContent">
+      <br/>
       
-       <a href="http://maps.google.com/maps/place?cid=9231320286071394708&q=smyths+waterford+ireland&hl=e"><font color=#6A0020>GameSTOP</font></a> coupon <b>BGA37h</b>
-          
-       <img src="imagemap.png" width="618" height="153" usemap="#sectionmap" />
+       <p><font color=#6A0020>Deals - </font></a>Shop offers from your local businesses.<b> Unbelievable prices!</b></br/>
+          <p><font color=#6A0020>Daily Deals - </font></a>Time limited offers with huge discount.<b> You can miss out!</b><br/>
+          	<p><font color=#6A0020>Coupon Codes</font></a> If you want get things cheap <b> Present this at the check out!</b>
+      
 
-<map name="sectionmap">
-<area shape="rect" coords="0,0,206,153" alt="Console"   href="http://www.gamestop.ie/core/common/default.aspx?quickSearch=ConsolesXMAS11" target=”_blank” title="Game Consoles"/>
-<area shape="rect" coords="206,0,412,153" alt="Games" href="http://www.gamestop.ie/core/common/default.aspx?quickSearch=GamesXMAS11" target=”_blank” title="Top Games"/>
-<area shape="rect" coords="412,0,618,153" alt="Accessories" href="http://www.gamestop.ie/core/common/default.aspx?quickSearch=AccessoriesXMAS11" target=”_blank” title="Game Accessories"/>
 
-</map>
 
-          <p>Buy the latest games, including Xbox 360 games, PS3 titles, Wii software, DS & 3DS cartridges, PC games & purchase consoles, accessories. Pre-Order games ...</p>
+          <p>All discount codes and deals only available in partnership with local business participants.</p>
 	</div>
 
 

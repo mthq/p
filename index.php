@@ -4,7 +4,19 @@ session_start();
 
 include "db.php";
 
-	if( isset($_POST[login]) ){
+
+
+if (isset($_GET['cat_id'])) {
+	$cat_id = $_GET['cat_id'];
+	$cat_id = trim(strip_tags($cat_id));
+	$cat_id = mysql_escape_string($cat_id);
+//	echo $cat_id;
+	if ($cat_id == '') {
+		unset($cat_id);
+	}
+	
+	
+}	if( isset($_POST[login])){
 
 		$loginquery = "select user_id, firstname, surname, username, password, acc_type, email from users where username = '".$_POST['username']."'";
 		$loginresult = mysql_query($loginquery) or die("Query Error ".mysql_error());
@@ -42,7 +54,7 @@ include "db.php";
 <body>
 <div id="page"> 
     <div id="header"><!---------------HEADER--------------->
-    <div id="sign" align="right">
+    <div id="sign" align="right"><!---------------LOGIN BOX--------------->
      <?php
 	if($_SESSION['loggedin']=='yes'){
 		echo '<font color="6a0020>">Welcome back! '.$_SESSION['firstname'].' '.$_SESSION['surname'].'</font>';
@@ -69,37 +81,31 @@ include "db.php";
     <div id="infBar">welcome to the site</div>
     <div id="pageContent"><!---------------PAGE--------------->
     
+	
 	<div class="articleMenu">
 	<ul id="menuList">
 		<?php
 		include('leftmenu.php');
 		?>
 	</ul>
-	</div>
-	
-	<div class="articleBox">
-		
+	</div>	<div class="articleBox">
 		<div class="articleTitle"><center>Deals</center></div><!---------------PAGE TITLE--------------->
-        <?php
-		if($_SESSION['acc_type']==1){
-		?>
-		<div class="articleContent">
-		      
-        <p>We offer Coupon Codes with 20% discount at local shops.</p><br />
-       </div>
-		<?php
-		}
-		
-		include "dealpage.php";
-		
-		?>
+        	<div class="articleContent">
+        	<?php
+				if($_SESSION['acc_type']==1){
+			?>    
+        <p><center>We offer Coupon Codes with 20% discount for local shops.</center></p>
+			<?php
+			}
+				include "dealpage.php";
+			?>
+		</div>
+		<strong><br/><!-- <center -->Summer Offer is NOW ON!!!<!-- </center> --></strong>
 	</div>
- <strong><br/>Summer Offer is NOW ON!!!</strong>
-
     </div>
-
 </div><!---------------TITLE--------------->
-    <div id="footer"><a href="http://www.mthq.net">website design</a> by <a href="mailto:tomasz.sutor@gmail.com">Tomasz Sutor</a> | <a href="http://www.wit.ie">designed for WIT</a></div>
+    <div id="footer"><a href="http://www.mthq.net">website design</a> by <a href="mailto:tomasz.sutor@gmail.com">Tomasz Sutor</a> | 
+    <a href="http://www.wit.ie">designed for WIT</a></div>
         
 </body>
 </html>
